@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment</title>
+    </head>
+    <style>
+        #first{
+            background-image: url(http://placekitten.com/1300/400);
+            background-size: cover;
+            width: 100vw;
+            height: 40vw;
+           
+        }
+        #second{
+            width: 100vw;
+            height: 25vw;
+        }
+        #third{ 
+            width: 100vw;
+            height: 25vw;
+            background-color: red;
+        }
+        #forth{
+            width: 100vw;
+            height: 35vw;
+            background-color:#fd7030;
+            padding: 5% 0% 0.5% 0%;
+            overflow: hidden;
+            
+        }
+        #fifth{
+            width: 100vw;
+            height: 43vw;
+            background-size: cover;
+            background-image: url(http://placekitten.com/5000/2500);
+            padding: 5px 0% 0% 0%;
+        }
+        #firstpara{
+            width: 40%;
+            height: 20%;
+            position:relative;
+            top: 40%;
+            left: 30%;
+            text-align: center;
+            background-color: green;
+            font-size: 30px;
+        }
+    
+        #profile{
+            width: 25%;
+            height: 100%;
+            margin: -12% 0 0 37.5%; 
+        }
+        #name{
+            text-align: center;
+            
+        }
+        .title{
+            width: 45%;
+            height: 35%;
+            background-color: darkgray;
+            float: right;
+            margin: -20% 0 0 0;
+            text-align: center;
+        }
+        .workimg{
+            width: 15%;
+            height: 60%;
+            margin: 10% 5% 0 0;
+            background-image: url(http://placekitten.com/2000/2000);
+            background-size: cover;
+            float: left;
+        }
+      
+  
+        #forthleft{
+            width: 25%;
+            height: 75%;
+            background-color:#ff0000;
+            float: left;
+            margin: 0 5% 0 5%;
+        }
+        #bio{
+            
+        }
+        #bala{
+            padding: 0% 3% 0% 0%;
+        }
+        #tagline2{
+            position: relative;
+            top: 20%;
+            left: 30%;
+            color: rgba(241,201,23,0.5);
+            font-size: 50px;
+            width: 60%;
+        }
+        
+/*        full screen showing div  */
+        #showimg{
+            display: none;
+            width: 100vw;
+            height: 100vh;
+            overflow: auto;
+            padding: 15% 0 10% 0;
+            z-index: 1;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgb(0,0,0,0.8)
+            
+        }
+        
+/*        the close button */
+        #close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+    </style>
+    <body>
+<!--        full screen showing picture-->
+        <div id="showimg">
+        <span id="close">x</span>
+        <img id="fullshow"/>
+        
+            
+<!--            first div-->
+        </div>
+        <div id="first">
+            <p id="firstpara">HERE ARE SOME WORDS</p> 
+        </div>
+        
+<!--        second div-->
+        <div id="second">
+                <img id="profile" src="http://placekitten.com/500/500" />
+                <p id="name">Little Cat</p>     
+        </div>
+        
+<!--        third div-->
+        <div id="third" class="ti">
+
+            <div class="workimg" id="work1">
+                <p class="title">Group one</p>
+            </div> 
+            <div class="workimg" id="work2">
+                <p class="title">Group Two</p>
+            </div>
+            <div class="workimg" id="work3">
+                <p class="title">Group Three</p>
+            </div>
+            <div class="workimg" id="work4">
+                <p class="title">Group Four</p>
+            </div>
+            <div class="workimg" id="work5">
+                <p class="title">Group Five</p>
+            </div>      
+        </div>
+        
+        
+<!--        the forth div-->
+        <div id="forth">
+            <div id="forthleft"></div>
+            <h1 id="bio">Learn Web Coding in 12 Weeks</h1>
+            <p id="bala">
+                Web Development Fundamentals is a series of hands-on web code development and related courses leading to a statement of completion from BCIT Computing.
+
+                Students with no web coding background will learn to write code to develop and manage basic web sites to industry standards. This statement of completion is a subset of the Applied Web Development (AWD) associate certificate in Computing Part-time Studies.
+
+                This foundation in web development may be completed in as little as one term (12 weeks) part-time. COMP courses are available weeknights, Saturdays and with fast-track day delivery options at our BCIT Downtown Campus near the Granville SkyTrain Station.
+
+            </p>
+        </div>
+        
+        
+        
+<!--        the fifth div-->
+        <div id="fifth">
+            <p id="tagline2">IT IS A BEAUTIFUL CAT.</p>
+        </div>
+        
+        
+        
+        
+        
+        <script>
+//            get the full screen part
+            var Gpro = document.getElementById("profile");
+            var fulldiv = document.getElementById("showimg");
+            var closesign = document.getElementById("close");
+            var fullimg = document.getElementById("fullshow");
+
+            
+//            get the third div's img
+            var workD1 = document.getElementById("work1");
+            var workD2 = document.getElementById("work2");
+            var workD3 = document.getElementById("work3");
+            var workD4 = document.getElementById("work4");
+            var workD5 = document.getElementById("work5");  //the five little div in the middle
+            
+            Gpro.onclick = function(){
+                Gpro.src = "http://placekitten.com/600/600";
+                
+            }
+            workD1.onclick = function(){
+                workD1.style.backgroundImage = "url(http://placekitten.com/250/250)";
+                
+            }
+            workD2.onclick = function(){
+                workD2.style.backgroundImage = "url(http://placekitten.com/800/800)";
+                
+            }
+            workD3.onclick = function(){
+                workD3.style.opacity= "0.8";
+                
+            }
+            workD4.onclick = function(){
+                workD4.style.borderRadius = "50px";
+                
+            }
+            
+//            when the last img on the third div onclick, showing the image fully on the  screen
+            workD5.onclick = function(){
+                fulldiv.style.display = "block";
+                fullimg.src = "http://placekitten.com/2000/2000";
+            }
+            
+//            click to close
+            closesign.onclick = function(){
+                fulldiv.style.display = "none";
+            }
+        
+        
+        </script>
+    </body>
+</html>
