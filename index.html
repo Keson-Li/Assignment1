@@ -3,121 +3,397 @@
     <head>
         <title>Assignment</title>
         <style>
-            #first{
-                background-image: url(http://placekitten.com/1300/400);
-                background-size: cover;
-                width: 100vw;
-                height: 40vw;
+            
+            @media only screen and (min-width:960px){
+                #first{
+                    background-image: url(http://placekitten.com/1300/400);
+                    background-size: cover;
+                    width: 100vw;
+                    height: 40vw;
            
-            }
-            #second{
+                }
+                
+                #firstpara{
+                    width: 40%;
+                    height: 20%;
+                    position:relative;
+                    top: 40%;
+                    left: 30%;
+                    text-align: center;
+                    background-color: yellow;
+                    font-size: 30px;
+                }
+                
+                #tagline2{
+                    position: relative;
+                    top: 20%;
+                    left: 30%;
+                    color: rgba(241,201,23,0.5);
+                    font-size: 50px;
+                    width: 60%;
+                }
+                
+                #fifth{
+                    width: 100vw;
+                    height: 43vw;
+                    background-size: cover;
+                    background-image: url(http://placekitten.com/5000/2500);
+                    padding: 5px 0% 0% 0%;
+                }
+                
+                #second{
                 width: 100vw;
                 height: 25vw;
-            }
-            #third{ 
-                width: 100vw;
-                height: 25vw;
-                background-color: red;
-            }
-            #forth{
-                width: 100vw;
-                height: 35vw;
-                background-color:#fd7030;
-                padding: 5% 0% 0.5% 0%;
-                overflow: hidden;
+                }
+                
+                #third{ 
+                    width: 100vw;
+                    height: 25vw;
+                    background-color: red;
+                }
+                
+                #forth{
+                    width: 100vw;
+                    height: 35vw;
+                    background-color:#fd7030;
+                    padding: 5% 0% 0.5% 0%;
+                    overflow: hidden;
             
-            }
-            #fifth{
-                width: 100vw;
-                height: 43vw;
-                background-size: cover;
-                background-image: url(http://placekitten.com/5000/2500);
-                padding: 5px 0% 0% 0%;
-            }
-            #firstpara{
-                width: 40%;
-                height: 20%;
-                position:relative;
-                top: 40%;
-                left: 30%;
-                text-align: center;
-                background-color: green;
-                font-size: 30px;
-            }
+                }
+            
     
-            #profile{
-                width: 25%;
-                height: 100%;
-                margin: -12% 0 0 37.5%; 
-            }
-            #name{
-                text-align: center;
+                #profile{
+                    width: 25%;
+                    height: 100%;
+                    margin: -12% 0 0 37.5%; 
+                }
+                #name{
+                    text-align: center;
             
-            }
-            .title{
-                width: 45%;
-                height: 35%;
-                background-color: darkgray;
-                float: right;
-                margin: -20% 0 0 0;
-                text-align: center;
-            }
-            .workimg{
-                width: 15%;
-                height: 60%;
-                margin: 10% 5% 0 0;
-                background-image: url(http://placekitten.com/2000/2000);
-                background-size: cover;
-                float: left;
-            }
+                }
+                .title{
+                    width: 45%;
+                    height: 35%;
+                    background-color: darkgray;
+                    float: right;
+                    margin: -20% 0 0 0;
+                    text-align: center;
+                }
+                .workimg{
+                    width: 15%;
+                    height: 60%;
+                    margin: 10% 5% 0 0;
+                    background-image: url(http://placekitten.com/2000/2000);
+                    background-size: cover;
+                    float: left;
+                }
       
   
-            #forthleft{
-                width: 25%;
-                height: 75%;
-                background-color:#ff0000;
-                float: left;
-                margin: 0 5% 0 5%;
-            }
-            #bio{
+                #forthleft{
+                    width: 25%;
+                    height: 75%;
+                    background-color:#ff0000;
+                    float: left;
+                    margin: 0 5% 0 5%;
+                }
             
-            }
-            #bala{
-                padding: 0% 3% 0% 0%;
-            }
-            #tagline2{
-                position: relative;
-                top: 20%;
-                left: 30%;
-                color: rgba(241,201,23,0.5);
-                font-size: 50px;
-                width: 60%;
-            }
+                #bala{
+                    padding: 0% 3% 0% 0%;
+                }
+            
         
 /*        full screen showing div  */
-            #showimg{
-                display: none;
-                width: 100vw;
-                height: 100vh;
-                overflow: auto;
-                padding: 15% 0 10% 0;
-                z-index: 1;
-                position: fixed;
-                top: 0;
-                left: 0;
-                background-color: rgb(0,0,0,0.8)
+                #showimg{
+                    display: none;
+                    width: 100vw;
+                    height: 100vh;
+                    overflow: auto;
+                    padding: 15% 0 10% 0;
+                    z-index: 1;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    background-color: rgb(0,0,0,0.8)
             
-            }
+                }
         
 /*        the close button */
-            #close {
-                position: absolute;
-                top: 15px;
-                right: 35px;
-                color: #f1f1f1;
-                font-size: 40px;
-                font-weight: bold;
-                transition: 0.3s;
+                #close {
+                    position: absolute;
+                    top: 15px;
+                    right: 35px;
+                    color: #f1f1f1;
+                    font-size: 40px;
+                    font-weight: bold;
+                    transition: 0.3s;
+                }
+                
+            }
+            
+            
+            @media only screen and (min-width:480px) and (max-width:960px){
+                
+                #first{
+                    background-image: url(http://placekitten.com/1300/400);
+                    background-size: cover;
+                    width: 100vw;
+                    height: 40vw;
+           
+                }
+                
+                #firstpara{
+                    width: 40%;
+                    height: 20%;
+                    position:relative;
+                    top: 40%;
+                    left: 30%;
+                    text-align: center;
+                    background-color: skyblue;
+                    font-size: 15px;
+                }
+                
+                #tagline2{
+                    position: relative;
+                    top: 20%;
+                    left: 30%;
+                    color: rgba(241,201,23,0.5);
+                    font-size: 30px;
+                    width: 60%;
+                }
+                
+                #bio{
+                    font-size: 25px;
+                }
+                
+                #fifth{
+                    width: 100vw;
+                    height: 43vw;
+                    background-size: cover;
+                    background-image: url(http://placekitten.com/5000/2500);
+                    padding: 5px 0% 0% 0%;
+                }
+                
+                #second{
+                width: 100vw;
+                height: 25vw;
+                }
+                #third{ 
+                    width: 100vw;
+                    height: 25vw;
+                    background-color: red;
+                }
+                #forth{
+                    width: 100vw;
+                    height: 35vw;
+                    background-color:#fd7030;
+                    padding: 5% 0% 0.5% 0%;
+                    overflow: hidden;
+            
+                }
+    
+                #profile{
+                    width: 25%;
+                    height: 100%;
+                    margin: -12% 0 0 37.5%; 
+                }
+                #name{
+                    text-align: center;
+            
+                }
+                .title{
+                    width: 45%;
+                    height: 35%;
+                    background-color: darkgray;
+                    float: right;
+                    margin: -20% 0 0 0;
+                    text-align: center;
+                }
+                .workimg{
+                    width: 15%;
+                    height: 60%;
+                    margin: 10% 5% 0 0;
+                    background-image: url(http://placekitten.com/2000/2000);
+                    background-size: cover;
+                    float: left;
+                }
+      
+  
+                #forthleft{
+                    width: 25%;
+                    height: 75%;
+                    background-color:#ff0000;
+                    float: left;
+                    margin: 0 5% 0 5%;
+                }
+            
+                #bala{
+                    padding: 0% 3% 0% 0%;
+                }
+            
+        
+/*        full screen showing div  */
+                #showimg{
+                    display: none;
+                    width: 100vw;
+                    height: 100vh;
+                    overflow: auto;
+                    padding: 15% 0 10% 0;
+                    z-index: 1;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    background-color: rgb(0,0,0,0.8)
+            
+                }
+        
+/*        the close button */
+                #close {
+                    position: absolute;
+                    top: 15px;
+                    right: 35px;
+                    color: #f1f1f1;
+                    font-size: 40px;
+                    font-weight: bold;
+                    transition: 0.3s;
+                }
+                
+                
+                
+            }
+            
+            
+            
+            
+            
+            @media only screen and (max-width:480px){
+                .fird{
+                    background-image: url(http://placekitten.com/600/300);
+                    background-size: cover;
+                    width: 100vw;
+                    height: 40vw;
+                }
+                
+                
+                #firstpara{
+                    width: 40%;
+                    height: 20%;
+                    position:relative;
+                    top: 40%;
+                    left: 30%;
+                    text-align: center;
+                    background-color: lightcyan;
+                    font-size: 10px;
+                }
+                #tagline2{
+                    position: relative;
+                    top: 20%;
+                    left: 30%;
+                    color: rgba(241,201,23,0.5);
+                    font-size: 20px;
+                    width: 60%;
+                }
+                
+                #bio{
+                    font-size: 20px;
+                }
+                
+                #fifth{
+                    width: 100vw;
+                    height: 43vw;
+                    background-size: cover;
+                    background-image: url(http://placekitten.com/1300/400);
+                    padding: 5px 0% 0% 0%;
+                }
+                
+                #second{
+                width: 100vw;
+                height: 25vw;
+                }
+                #third{ 
+                    width: 100vw;
+                    height: 25vw;
+                    background-color: red;
+                }
+                #forth{
+                    width: 100vw;
+                    height: 35vw;
+                    background-color:#fd7030;
+                    padding: 5% 0% 0.5% 0%;
+                    overflow: hidden;
+            
+                }
+            
+    
+                #profile{
+                    width: 25%;
+                    height: 100%;
+                    margin: -12% 0 0 37.5%; 
+                }
+                #name{
+                    text-align: center;
+            
+                }
+                .title{
+                    width: 45%;
+                    height: 35%;
+                    background-color: darkgray;
+                    float: right;
+                    margin: -20% 0 0 0;
+                    text-align: center;
+                }
+                .workimg{
+                    width: 15%;
+                    height: 60%;
+                    margin: 10% 5% 0 0;
+                    background-image: url(http://placekitten.com/2000/2000);
+                    background-size: cover;
+                    float: left;
+                }
+      
+  
+                #forthleft{
+                    width: 25%;
+                    height: 75%;
+                    background-color:#ff0000;
+                    float: left;
+                    margin: 0 5% 0 5%;
+                }
+            
+                #bala{
+                    padding: 0% 3% 0% 0%;
+                }
+            
+        
+/*        full screen showing div  */
+                #showimg{
+                    display: none;
+                    width: 100vw;
+                    height: 100vh;
+                    overflow: auto;
+                    padding: 15% 0 10% 0;
+                    z-index: 1;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    background-color: rgb(0,0,0,0.8)
+            
+                }
+        
+/*        the close button */
+                #close {
+                    position: absolute;
+                    top: 15px;
+                    right: 35px;
+                    color: #f1f1f1;
+                    font-size: 40px;
+                    font-weight: bold;
+                    transition: 0.3s;
+                }
+                
+            }
+            
+            
+            
         </style>
     
     
@@ -144,7 +420,7 @@
             
 <!--            first div-->
         </div>
-        <div id="first">
+        <div id="first" class="fird">
             <p id="firstpara">HERE ARE SOME WORDS</p> 
         </div>
         
