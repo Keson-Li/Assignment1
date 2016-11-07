@@ -2,124 +2,139 @@
 <html>
     <head>
         <title>Assignment</title>
-    </head>
-    <style>
-        #first{
-            background-image: url(http://placekitten.com/1300/400);
-            background-size: cover;
-            width: 100vw;
-            height: 40vw;
+        <style>
+            #first{
+                background-image: url(http://placekitten.com/1300/400);
+                background-size: cover;
+                width: 100vw;
+                height: 40vw;
            
-        }
-        #second{
-            width: 100vw;
-            height: 25vw;
-        }
-        #third{ 
-            width: 100vw;
-            height: 25vw;
-            background-color: red;
-        }
-        #forth{
-            width: 100vw;
-            height: 35vw;
-            background-color:#fd7030;
-            padding: 5% 0% 0.5% 0%;
-            overflow: hidden;
+            }
+            #second{
+                width: 100vw;
+                height: 25vw;
+            }
+            #third{ 
+                width: 100vw;
+                height: 25vw;
+                background-color: red;
+            }
+            #forth{
+                width: 100vw;
+                height: 35vw;
+                background-color:#fd7030;
+                padding: 5% 0% 0.5% 0%;
+                overflow: hidden;
             
-        }
-        #fifth{
-            width: 100vw;
-            height: 43vw;
-            background-size: cover;
-            background-image: url(http://placekitten.com/5000/2500);
-            padding: 5px 0% 0% 0%;
-        }
-        #firstpara{
-            width: 40%;
-            height: 20%;
-            position:relative;
-            top: 40%;
-            left: 30%;
-            text-align: center;
-            background-color: green;
-            font-size: 30px;
-        }
+            }
+            #fifth{
+                width: 100vw;
+                height: 43vw;
+                background-size: cover;
+                background-image: url(http://placekitten.com/5000/2500);
+                padding: 5px 0% 0% 0%;
+            }
+            #firstpara{
+                width: 40%;
+                height: 20%;
+                position:relative;
+                top: 40%;
+                left: 30%;
+                text-align: center;
+                background-color: green;
+                font-size: 30px;
+            }
     
-        #profile{
-            width: 25%;
-            height: 100%;
-            margin: -12% 0 0 37.5%; 
-        }
-        #name{
-            text-align: center;
+            #profile{
+                width: 25%;
+                height: 100%;
+                margin: -12% 0 0 37.5%; 
+            }
+            #name{
+                text-align: center;
             
-        }
-        .title{
-            width: 45%;
-            height: 35%;
-            background-color: darkgray;
-            float: right;
-            margin: -20% 0 0 0;
-            text-align: center;
-        }
-        .workimg{
-            width: 15%;
-            height: 60%;
-            margin: 10% 5% 0 0;
-            background-image: url(http://placekitten.com/2000/2000);
-            background-size: cover;
-            float: left;
-        }
+            }
+            .title{
+                width: 45%;
+                height: 35%;
+                background-color: darkgray;
+                float: right;
+                margin: -20% 0 0 0;
+                text-align: center;
+            }
+            .workimg{
+                width: 15%;
+                height: 60%;
+                margin: 10% 5% 0 0;
+                background-image: url(http://placekitten.com/2000/2000);
+                background-size: cover;
+                float: left;
+            }
       
   
-        #forthleft{
-            width: 25%;
-            height: 75%;
-            background-color:#ff0000;
-            float: left;
-            margin: 0 5% 0 5%;
-        }
-        #bio{
+            #forthleft{
+                width: 25%;
+                height: 75%;
+                background-color:#ff0000;
+                float: left;
+                margin: 0 5% 0 5%;
+            }
+            #bio{
             
-        }
-        #bala{
-            padding: 0% 3% 0% 0%;
-        }
-        #tagline2{
-            position: relative;
-            top: 20%;
-            left: 30%;
-            color: rgba(241,201,23,0.5);
-            font-size: 50px;
-            width: 60%;
-        }
+            }
+            #bala{
+                padding: 0% 3% 0% 0%;
+            }
+            #tagline2{
+                position: relative;
+                top: 20%;
+                left: 30%;
+                color: rgba(241,201,23,0.5);
+                font-size: 50px;
+                width: 60%;
+            }
         
 /*        full screen showing div  */
-        #showimg{
-            display: none;
-            width: 100vw;
-            height: 100vh;
-            overflow: auto;
-            padding: 15% 0 10% 0;
-            z-index: 1;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: rgb(0,0,0,0.8)
+            #showimg{
+                display: none;
+                width: 100vw;
+                height: 100vh;
+                overflow: auto;
+                padding: 15% 0 10% 0;
+                z-index: 1;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: rgb(0,0,0,0.8)
             
-        }
+            }
         
 /*        the close button */
-        #close {
-            position: absolute;
-            top: 15px;
-            right: 35px;
-            color: #f1f1f1;
-            font-size: 40px;
-            font-weight: bold;
-            transition: 0.3s;
-    </style>
+            #close {
+                position: absolute;
+                top: 15px;
+                right: 35px;
+                color: #f1f1f1;
+                font-size: 40px;
+                font-weight: bold;
+                transition: 0.3s;
+        </style>
+    
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+            
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    </head>
+    
+    
     <body>
 <!--        full screen showing picture-->
         <div id="showimg">
